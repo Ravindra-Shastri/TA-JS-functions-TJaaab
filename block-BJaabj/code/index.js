@@ -2,7 +2,6 @@
 1. Create a function named `sayHello` that alerts a message `Hello World!`.
 */
 function sayHello(){
-  let message = +prompt("Enter the message");
   alert(`Hello World`);
 }
 
@@ -15,10 +14,10 @@ function sayHello(){
   - Alert `fullName`
 */
 function fullName(){
-let firstName = +prompt(`Enter your first name`);
-let lastName = +prompt(`Enter your last name`);
-let fullName = firstName + lastName
-alert(`fullName`)
+let firstName = prompt(`Enter your first name`);
+let lastName = prompt(`Enter your last name`);
+let fullName = `${firstName} ${lastName}`
+alert(fullName);
 }
 /*
 3. Create a function named `addTwoNumbers` with the following steps:
@@ -29,10 +28,10 @@ alert(`fullName`)
   - Alert `sum`
 */
 function addTwoNumbers(){
-  let firstNum = Number(prompt("Enter the first number"));
-  let secondNum = Number(prompt("Enter the second number"));
+  let firstNum = +prompt(`Enter the first number`);
+  let secondNum = +prompt(`Enter the second number`);
   let sum = firstNum + secondNum
-  alert(`sum`)
+  alert(sum)
 }
 /*
 4. Create a function named `getTable` with the following steps:
@@ -53,9 +52,10 @@ function addTwoNumbers(){
   9 * 10 = 90
 */
 function getTable(){
-  let num = Number(prompt("Enter a number"));
-  Number = 9
-  console.log(Number)
+  let num = prompt(`Enter a number`);
+  for(i = 1; i <=10; i++);{
+    console.log(`${num} * ${i} = ${num * i}`);
+  }  
 }
 /*
 5. Create a function named `isLeapYear` with the following steps:
@@ -65,9 +65,15 @@ function getTable(){
 */
 function isLeapYear(){
   let year = +prompt("Enter a year");
-  alert("[year] is a leap year");
+  if(year % 400 === 0){
+  alert(`${year} is a leap year`);
+}else if(year % 100 === 0){
+  alert(`${year} is not a leap year`);
+}else if(year % 4 === 0){
+  alert(`${year} is a leap year`);
 }else{
-  alert(`[year] is not a leap year`);
+  alert(`${year} is not a leap year`);
+}
 }
 /*
 6. Create a function named `getFactorial` with the following steps:
@@ -78,5 +84,11 @@ function isLeapYear(){
 */
 function getFactorial(){
   let number = +prompt(`Enter a number`);
-  alert(`The factorial of [number] is [factorial]`);
+  let final = 1;
+  for(let i = num; i >= 1; i--){
+    final *= i;
+  }
+  alert(`The factorial of ${num} is ${final}`);
 }
+
+
