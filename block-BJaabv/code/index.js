@@ -36,7 +36,7 @@ return totalNumberofMovie;
 // Your code goes here
 function celsiusToFahrenheit(temp) {
   let fahrenheit = (temp * 9) / 5 * 32;
-  return `${temp}F is ${fahrenheit}C`;
+  return `${temp}°F is ${fahrenheit}°C `;
 }
 
 /*
@@ -47,7 +47,7 @@ function celsiusToFahrenheit(temp) {
 // Your code goes here
 function celsiusToFahrenheit(temp) {
   let celcius = ((temp - 32) * 5) / 9;
-  return `${temp}F is ${celcius}C;`
+  return `${temp}°F is ${celcius}°C;`
   
 }
 
@@ -120,7 +120,7 @@ function sumOfN(n) {
 function sumOfNWithfive(n){
   let sum = 0;
   for(let i = 1; i <= num ; i++){
-    (i % 5 === 0 || i % 7 === 0) {
+    (i % 5 === 0 || i % 7 === 0);{
     sum += i;
   }
 }
