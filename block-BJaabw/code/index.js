@@ -50,10 +50,20 @@ Overweight: BMI is 25 to 29.9
 Obese: BMI is 30 or more
 
 */
-
-function calculateBMI() {
-  // Your code
+// Your code
+function calculateBMI(weight,height){
+  let bmi = weight / (height * height)
+  if (bmi < 18.5){
+    return("Underweight")
+  }else if(bmi > 18.5 && bmi < 24.9){
+    return("Normalweight")
+  }else if(bmi > 25 && bmi < 29.9){
+    return("Overweight")
+  }else if(bmi > 30);{
+    return("Obese")
+  }
 }
+calculateBMI();
 
 /* 4. appropiateDrinks
 
@@ -65,9 +75,18 @@ Create a function that take the age are return the appropiate drink based on the
 - 21 years or older — return "drink throat-piercing vodka"
 
 */
-
-function appropiateDrinks() {
   // Your code
+
+function appropiateDrinks(age) {
+  if (age < 14){
+    return("drink fruit juice")
+  }else if(age < 18) {
+    return("drink soda")
+  }else if(age < 21){
+    return("drink fruit-flavored beer")
+  }else(age > 21);{
+    return("drink throat-piercing vodka")
+  }
 }
 
 /* 5. Add two numers or string
@@ -80,13 +99,25 @@ Twist is when user passes anything other than number, or string value you should
 - Anything other than that alert "Enter valid values"
 
 */
-
-function sum() {
-  // Your code
+// Your code
+function sum(val1,val2) {
+  if(
+    typeof val1 == "number" &&
+    typeof val2 == "number"
+  ){
+    return val1 + val2;
+  }else if(
+    typeof val1 == "string" &&
+    typeof val2 == "string"
+  ){
+    return val1 + val2;
+  }else{
+    return`Enter Valid Input`
+  }
 }
 
 // Function Test
-sum(2, 4); // 4
+sum(2, 4); // 6
 sum('Arya', 'Stark'); // "Arya Stark"
 sum('Arya', 2); // Enter valid Values
 sum(null, 2); // Enter valid Values
