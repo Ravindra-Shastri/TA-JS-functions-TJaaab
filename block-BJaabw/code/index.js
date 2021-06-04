@@ -11,8 +11,10 @@ minToSec(2) ➞ 120
 */
 
 // - Write a Function Decleration for above problem
-function minToSec() {
-  // Your code
+// Your code
+function minToSec(min) {
+  let sec = min * 60;
+  return sec;
 }
 // - Execute the function with required parameter
 
@@ -24,14 +26,14 @@ The function accepts three parameter lower, upper and the number.
 isInRange(1, 20, 9); // true
 isInRange(1, 10, 19); // false
 */
-
 // - Write a Function Decleration for above problem
-function isInRange() {
-  // Your code
+// Your code
+function isInRange(lower,upper,n) {
+  return lower< n && upper>n
 }
 // - Execute the function with required parameter
 
-/* 2. calculateBMI
+/* 3. calculateBMI
 
 
 Take two arguments weight and height and return `Underweight`, `Normal` etc based on data.
@@ -53,7 +55,7 @@ function calculateBMI() {
   // Your code
 }
 
-/* 3. appropiateDrinks
+/* 4. appropiateDrinks
 
 Create a function that take the age are return the appropiate drink based on these conditions:
 
@@ -68,7 +70,7 @@ function appropiateDrinks() {
   // Your code
 }
 
-/* 4. Add two numers or string
+/* 5. Add two numers or string
 
 Write a function that accepts two numbers or string and returns the sum of the numbers and concatenation of the strings.
 Twist is when user passes anything other than number, or string value you should be able to handle that.
